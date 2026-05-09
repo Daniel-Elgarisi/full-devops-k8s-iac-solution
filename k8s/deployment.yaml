@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: hello-newapp
-          image: rougawh/hello-newapp
+          image: danielelgarisi/hello-newapp
           ports:
             - containerPort: 80
