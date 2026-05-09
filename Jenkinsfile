@@ -1,5 +1,5 @@
 def appname = "hello-newapp"
-def repo = "rougawh"
+def repo = "danielelgarisi"
 def appimage = "${repo}/${appname}"
 def apptag = "${env.BUILD_NUMBER}"
 def kustomizeVersion = "v5.4.3"
