@@ -31,7 +31,7 @@ podTemplate(
         curl -sL "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2F${kustomizeVersion}/kustomize_${kustomizeVersion}_linux_amd64.tar.gz" | tar xz -C ${env.WORKSPACE}
       """
 
-      sh "git clone --branch gitops --single-branch https://oauth2:${env.GITHUB_TOKEN}@github.com/leomerl/full-devops-k8s-iac-solution.git gitops-repo"
+      sh "git clone --branch gitops --single-branch https://oauth2:${env.GITHUB_TOKEN}@github.com/Daniel-Elgarisi/full-devops-k8s-iac-solution.git gitops-repo"
 
       sh """
         mkdir -p gitops-repo/apps/${appname}
